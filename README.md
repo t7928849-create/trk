@@ -1,37 +1,29 @@
-# Discord Roblox Bot Integration
+# Python Setup Instructions for Discord Roblox Bot
 
-## Setup Instructions
+## Getting Started
 
-1. **Clone the Repository**  
-   Use the following command to clone the repository:  
-   ```bash  
-   git clone https://github.com/t7928849-create/trk.git  
-   ```  
+### Step 1: Obtain API Keys
+1. Go to the [Discord Developer Portal](https://discord.com/developers/applications).
+2. Create a new application.
+3. Navigate to the "Bot" tab and click "Add Bot".
+4. Copy the "Token" and save it for later.
 
-2. **Navigate to the Directory**  
-   Change into the project directory:  
-   ```bash  
-   cd trk  
-   ```  
+### Step 2: Install Dependencies
+To install the necessary dependencies, use the following command:
+```bash
+pip install -r requirements.txt
+```
 
-3. **Install Dependencies**  
-   Make sure you have Node.js installed. Then, install the required packages:  
-   ```bash  
-   npm install  
-   ```  
+### Step 3: Create a .env File
+Create a file named `.env` in the root directory of your project and add the following lines:
+```
+DISCORD_TOKEN=your_discord_token_here
+OTHER_API_KEYS=other_api_key_values_here
+```
+Replace `your_discord_token_here` with the token you obtained from the Discord Developer Portal and add any other necessary API keys.
 
-4. **Create a Configuration File**  
-   - Create a `.env` file in the root directory.  
-   - Add your Discord bot token and Roblox API keys as follows:  
-     ```env  
-     DISCORD_TOKEN=your_discord_token_here  
-     ROBLOX_API_KEY=your_roblox_api_key_here  
-     ```  
-
-5. **Run the Bot**  
-   Start the bot using:  
-   ```bash  
-   node index.js  
-   ```  
-
-Your bot should now be running and integrated with Roblox!
+### Step 4: Run the Bot
+Finally, you can run the bot using the command:
+```bash
+python bot.py
+```
